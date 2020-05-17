@@ -45,6 +45,8 @@ body {
 /* Шапка сайта */
 /* Логотип веб-студии */
 .studio-logo {
+    display: block;
+    padding-top: 24px;
     color: var(--main-accent);
     font-family: Raleway;
     font-weight: 700;
@@ -61,6 +63,7 @@ body {
 /* Меню навигации */
 .main-nav {
     display: flex;
+    align-items: baseline;
 }
 .nav-bar {
     display: flex;
@@ -101,14 +104,17 @@ body {
     margin: 0px;
 }
 
+.contact-item {
+    display: flex;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
 .contacts .contact-item +.contact-item{
     margin-left: 50px;
 }
 
 .studio-contacts {
-    display: block;
-    padding-top: 32px;
-    padding-bottom: 32px;
     color: var(--primary-page-text);
     font-size: 14px;
     line-height: 1.14;
