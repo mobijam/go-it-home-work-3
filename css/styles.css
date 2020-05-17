@@ -1,0 +1,310 @@
+/* Палитра основных цветов лендинга
+#757575; #2196F3; #212121; #FFFFFF; color: rgba(255, 255, 255, 0.6); color: rgba(255, 255, 255, 0.4);
+#AFB1B8; #F5F4FA; #FFFFFF; #E5E5E5; #F5F4FA; #2F303A;*/
+
+:root {
+--main-accent: #2196F3;
+--primary-page-text: #757575;
+--secondary-page-text: #212121;
+--logo-part-text: #000000;
+--page-hero-text: #FFFFFF;
+--footer-contacts: rgba(255, 255, 255, 0.6);
+--copyright: rgba(255, 255, 255, 0.4);
+--link-icons: #AFB1B8;
+--bnf-icons-bg: #F5F4FA;
+--primary-bg: #FFFFFF;
+--fig-caption-bg: rgba(47, 48, 58, 0.8);
+--team-section-bg: #F5F4FA;
+--footer-bg: #2F303A;
+}
+
+/* Шрифты  и главный фон страницы*/
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--primary-bg);
+}
+
+/* Шапка сайта */
+/* Логотип веб-студии */
+.studio-logo {
+    color: var(--main-accent);
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+}
+/* Часть логотипа */
+.logo {
+    color: var(--logo-part-text);
+}
+
+/* Меню навигации */
+.nav-bar {
+    list-style-type: none;
+}
+
+.nav-bar .link {
+    color: var(--secondary-page-text);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.link:hover,
+.link:focus {
+    color: var(--main-accent);
+}
+
+/* Контакты веб-студии */
+.contacts {
+    list-style-type: none;
+}
+.studio-contacts {
+    color: var(--primary-page-text);
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+}
+
+.studio-contacts:hover,
+.studio-contacts:focus {
+    color: var(--main-accent);
+}
+
+/* Баннер с фоновым рисунком */
+.banner {
+    color: var(--page-hero-text);
+    /* цвет фона не из макета добавлен для контраста */
+    background-color: teal;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+/* Кнопка заказа */
+.button {
+    color: var(--page-hero-text);
+    background-color: var(--main-accent);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-decoration: none;
+}
+/* Основной контент */
+.our-benefits {
+    color: var(--primary-page-text);
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+/* Скрытый заголовок */
+.hidden-title {
+    display: none;
+}
+/* Наши преимущества */
+.benefits-list {
+    list-style-type: none;
+}
+
+.benefits-list .title {
+    color: var(--secondary-page-text);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+/* Чем мы занимаемся */
+/* Заголовок секции */
+.projects-title {
+    color: var(--secondary-page-text);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+}
+
+.categories {
+    list-style-type: none;
+}
+
+/* Подписи к проектам */
+.project {
+    color: var(--page-hero-text);
+    background-color: var(--fig-caption-bg);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+/* Сотрудники */
+.team {
+    background-color: var(--team-section-bg);
+}
+/* Заголовок секции */
+.team-title {
+    color: var(--secondary-page-text);
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+}
+
+.team-list {
+    list-style-type: none;
+}
+
+/* Имя сотрудника */
+.employee-name {
+    color: var(--secondary-page-text);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+}
+/* Должность */
+.employee-position {
+    color: var(--primary-page-text);
+    font-size: 16px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+}
+
+.social-links-list {
+    list-style-type: none;
+}
+
+/* Секция клиентов */
+/* Заголовок секции */
+.clients-title {
+    color: var(--secondary-page-text);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+}
+
+.clients-list {
+    list-style-type: none;
+}
+
+/* Подвал сайта */
+footer {
+    background-color: var(--footer-bg);
+}
+/* Логотип веб-студии в футере */
+.studio-logo-footer {
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 1.18;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+}
+
+.studio-logo-footer:visited {
+    color: var(--main-accent);
+}
+
+.footer-logo {
+    color: var(--page-hero-text);
+}
+/* Адрес веб-студии */
+address {
+    color: var(--page-hero-text);
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+/*  Контакты веб-студии в футере*/
+.footer-contacts {
+    color: var(--footer-contacts);
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+}
+/* Призыв "присоединяйтесь" */
+.join-us {
+    color: var(--page-hero-text);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+/*Разработчик сайта  */
+.copyright {
+    color: var(--copyright);
+    font-size: 12px;
+    line-height: 2;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.filter {
+    list-style-type: none;
+}
+
+.nav-portfolio {
+    color: var(--secondary-page-text);
+    background-color: var(--bnf-icons-bg);
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.nav-portfolio:hover,
+.nav-portfolio:focus {
+    color: var(--page-hero-text);
+    background-color: var(--main-accent);
+}
+
+.work-list {
+    list-style-type: none;
+}
+
+.work-item > a {
+    text-decoration: none;
+}
+
+.list-title {
+    color: var(--secondary-page-text);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+
+.work-type {
+    color: var(--primary-page-text);
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.03em;
+}
+
+.work-description {
+    color: var(--page-hero-text);
+    /* Добавила фон для контраста */
+    background-color: teal;
+    font-size: 18px;
+    line-height: 1.56;
+    letter-spacing: 0.03em;
+}
