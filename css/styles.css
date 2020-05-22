@@ -2,16 +2,6 @@
 #757575; #2196F3; #212121; #FFFFFF; color: rgba(255, 255, 255, 0.6); color: rgba(255, 255, 255, 0.4);
 #AFB1B8; #F5F4FA; #FFFFFF; #E5E5E5; #F5F4FA; #2F303A;*/
 
-html {
-    box-sizing: border-box;
-}
-
-*,
-*::before,
-*::after {
-    box-sizing: inherit;
-}
-
 :root {
 --main-accent: #2196F3;
 --primary-page-text: #757575;
@@ -34,19 +24,9 @@ body {
     background-color: var(--primary-bg);
 }
 
-.container {
-    margin-left: auto;
-    margin-right: auto;
-    width: 1230px;
-    padding-left: 15px;
-    padding-right: 15px;
-    outline: 2px solid tomato;
-}
 /* Шапка сайта */
 /* Логотип веб-студии */
 .studio-logo {
-    display: block;
-    padding-top: 24px;
     color: var(--main-accent);
     font-family: Raleway;
     font-weight: 700;
@@ -61,25 +41,11 @@ body {
 }
 
 /* Меню навигации */
-.main-nav {
-    display: flex;
-    align-items: baseline;
-}
 .nav-bar {
-    display: flex;
     list-style-type: none;
-    padding: 0px;
-    margin: 0px;
-}
-
-.nav-bar .nav-item +.nav-item {
-    margin-left: 50px;
 }
 
 .nav-bar .link {
-    display: block;
-    padding-top: 32px;
-    padding-bottom: 32px;
     color: var(--secondary-page-text);
     font-weight: 500;
     font-size: 14px;
@@ -98,22 +64,8 @@ body {
 
 /* Контакты веб-студии */
 .contacts {
-    display: flex;
     list-style-type: none;
-    padding: 0px;
-    margin: 0px;
 }
-
-.contact-item {
-    display: flex;
-    padding-top: 32px;
-    padding-bottom: 32px;
-}
-
-.contacts .contact-item +.contact-item{
-    margin-left: 50px;
-}
-
 .studio-contacts {
     color: var(--primary-page-text);
     font-size: 14px;
@@ -128,31 +80,21 @@ body {
 }
 
 /* Баннер с фоновым рисунком */
-.hero-banner {
-    text-align: center;
-}
-
 .banner {
     color: var(--page-hero-text);
     /* цвет фона не из макета добавлен для контраста */
     background-color: teal;
-    margin-top: 0px;
-    margin-bottom: 46px;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
+    text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
 }
 /* Кнопка заказа */
 .button {
-    display: inline-block;
     color: var(--page-hero-text);
     background-color: var(--main-accent);
-    min-width: 200px;
-    min-height: 50px;
-    border-radius: 4px;
-    padding: 10px 32px;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
@@ -163,8 +105,6 @@ body {
 /* Основной контент */
 .our-benefits {
     color: var(--primary-page-text);
-    margin-top: 0px;
-    margin-bottom: 94px;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
@@ -175,39 +115,21 @@ body {
 }
 /* Наши преимущества */
 .benefits-list {
-    display: flex;
     list-style-type: none;
-    padding: 0px;
-    margin: 0px;
 }
 
 .benefits-list .title {
     color: var(--secondary-page-text);
-    margin-top: 30px;
-    margin-bottom: 10px;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
 }
-
-.benefits-list p {
-    margin-top: 0px;
-    margin-bottom: 0px;
-}
-
 /* Чем мы занимаемся */
-.our-projects {
-    margin-top: 0px;
-    margin-bottom: 94px;
-}
-
 /* Заголовок секции */
 .projects-title {
     color: var(--secondary-page-text);
-    margin-top: 0px;
-    margin-bottom: 50px;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
@@ -215,18 +137,13 @@ body {
 }
 
 .categories {
-    display: flex;
     list-style-type: none;
-    padding: 0px;
-    margin: 0px;
 }
 
 /* Подписи к проектам */
 .project {
     color: var(--page-hero-text);
     background-color: var(--fig-caption-bg);
-    margin-top: 0px;
-    margin-bottom: 0px;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -236,15 +153,10 @@ body {
 /* Сотрудники */
 .team {
     background-color: var(--team-section-bg);
-    margin-top: 0px;
-    margin-bottom: 94px;
 }
 /* Заголовок секции */
 .team-title {
     color: var(--secondary-page-text);
-    margin-top: 0px;
-    margin-bottom: 50px;
-    padding-top: 94px;
     font-weight: bold;
     font-size: 36px;
     line-height: 1.17;
@@ -252,21 +164,12 @@ body {
 }
 
 .team-list {
-    display: flex;
     list-style-type: none;
-    padding: 0px;
-    margin: 0px;
-}
-
-.team-list p {
-    margin-top: 0px;
 }
 
 /* Имя сотрудника */
 .employee-name {
     color: var(--secondary-page-text);
-    margin-top: 30px;
-    margin-bottom: 10px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
@@ -275,7 +178,6 @@ body {
 /* Должность */
 .employee-position {
     color: var(--primary-page-text);
-    margin-bottom: 28px;
     font-size: 16px;
     line-height: 1.19;
     letter-spacing: 0.03em;
@@ -283,22 +185,12 @@ body {
 
 .social-links-list {
     list-style-type: none;
-    padding: 0px;
-    margin: 0px;
 }
 
 /* Секция клиентов */
-.our-clients {
-    margin-top: 0px;
-    margin-bottom: 94px;
-}
-
 /* Заголовок секции */
 .clients-title {
     color: var(--secondary-page-text);
-    margin-top: 0px;
-    margin-bottom: 50px;
-    padding-top: 94px;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
@@ -306,16 +198,12 @@ body {
 }
 
 .clients-list {
-    display: flex;
     list-style-type: none;
-    padding: 0px;
-    margin: 0px;
 }
 
 /* Подвал сайта */
 footer {
     background-color: var(--footer-bg);
-    padding-top: 48px;
 }
 /* Логотип веб-студии в футере */
 .studio-logo-footer {
@@ -353,8 +241,6 @@ address {
 /* Призыв "присоединяйтесь" */
 .join-us {
     color: var(--page-hero-text);
-    margin-top: 0px;
-    margin-bottom: 0px;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -364,8 +250,6 @@ address {
 /*Разработчик сайта  */
 .copyright {
     color: var(--copyright);
-    margin-top: 0px;
-    margin-bottom: 0px;
     font-size: 12px;
     line-height: 2;
     text-align: center;
@@ -374,15 +258,11 @@ address {
 
 .filter {
     list-style-type: none;
-    padding: 0px;
-    margin: 0px;
 }
 
 .nav-portfolio {
     color: var(--secondary-page-text);
     background-color: var(--bnf-icons-bg);
-    border-radius: 4px;
-    padding: 6px 22px;
     font-family: inherit;
     font-weight: 500;
     font-size: 16px;
@@ -399,8 +279,6 @@ address {
 
 .work-list {
     list-style-type: none;
-    padding: 0px;
-    margin: 0px;
 }
 
 .work-item > a {
@@ -409,8 +287,6 @@ address {
 
 .list-title {
     color: var(--secondary-page-text);
-    margin-top: 20px;
-    margin-bottom: 4px;
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
@@ -419,8 +295,6 @@ address {
 
 .work-type {
     color: var(--primary-page-text);
-    margin-top: 0px;
-    margin-bottom: 20px;
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.03em;
@@ -430,8 +304,6 @@ address {
     color: var(--page-hero-text);
     /* Добавила фон для контраста */
     background-color: teal;
-    margin-top: 0px;
-    margin-bottom: 0px;
     font-size: 18px;
     line-height: 1.56;
     letter-spacing: 0.03em;
